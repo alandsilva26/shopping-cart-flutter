@@ -133,6 +133,7 @@ class _CartScreenState extends State<CartScreen> {
           elevation: 4,
           onPressed: () async {
             var result = await BarcodeScanner.scan();
+            print(result.rawContent.toString());
             submitValue(result.rawContent.toString());
           },
           child: Icon(Icons.add),

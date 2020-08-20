@@ -20,7 +20,7 @@ class Product {
 
   factory Product.fromJson(Map<String , dynamic> jsonData) {
     return Product(
-      id: jsonData["_id"].toString(),
+      id: jsonData["_id"],
       barcodeValue: jsonData["barcodeValue"],
       productName: jsonData["productName"],
       productVariant: jsonData["productVariant"],

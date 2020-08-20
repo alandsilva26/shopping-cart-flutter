@@ -8,7 +8,8 @@ import '../models/product.dart';
 class ProductsProvider with ChangeNotifier {
   List<Product> _products = [];
   double _totalPrice = 0.0;
-  String _baseUrl = "http://164.52.197.189:8181/fdb/prudle/db001/query";
+//  String _baseUrl = "http://164.52.197.189:8181/fdb/prudle/db001/query";
+  String _baseUrl = "https://alandsilva26.github.io/safetied_assignment/items.json";
 
   get products {
     return _products;
@@ -57,27 +58,35 @@ class ProductsProvider with ChangeNotifier {
 
   Future<void> fetchProducts(String barcodeValue) async {
     try {
-      final response = await http.post(
-        _baseUrl,
-        body: json.encode({
-          "select": {
-            "?group": [
-              "barcodeValue",
-              "productName",
-              "productVariant",
-              "productImage",
-              "productPrice"
-            ]
-          },
-          "where": [
-            ["?group", "productDetails/barcodeValue", barcodeValue]
-          ]
-        }),
-      );
+//      final response = await http.post(
+//        _baseUrl,
+//        body: json.encode({
+//          "select": {
+//            "?group": [
+//              "barcodeValue",
+//              "productName",
+//              "productVariant",
+//              "productImage",
+//              "productPrice"
+//            ]
+//          },
+//          "where": [
+//            ["?group", "productDetails/barcodeValue", barcodeValue]
+//          ]
+//        }),
+//      );
+    final response = await http.get(_baseUrl);
       if (response.statusCode == 200) {
         final extractedData = json.decode(response.body) as List;
-        Product product = Product.fromJson(extractedData[0]);
-
+        Product product;
+        for(var item in extractedData) {
+          print(item["barcodeValue"]);
+          if(item["barcodeValue"] == barcodeValue) {
+            print("__________");
+            product = Product.fromJson(item);
+            break;
+          }
+        }
         /// If product already exists then increment quantity instead of
         /// adding to list
         if (checkIfExists(product.id)) {
