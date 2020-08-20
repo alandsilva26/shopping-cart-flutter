@@ -4,7 +4,7 @@
     "barcodeValue": "S-197934-Z",
     "productName": "Robert Geller x Levis Shirt",
     "productVariant": "Size 40",
-    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic2.png",
+    "productImage": "https://alandsilva26.github.io/shopping-cart-flutter/itemImages/pic2.png",
     "productPrice": 2999.00
   },
   {
@@ -12,7 +12,7 @@
     "barcodeValue": "S-197922-Z",
     "productName": "Bose Quiet Comfort",
     "productVariant": "Black",
-    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic1.png",
+    "productImage": "https://alandsilva26.github.io/shopping-cart-flutter/itemImages/pic1.png",
     "productPrice": 9800.00
   },
   {
@@ -20,7 +20,7 @@
     "barcodeValue": "S-197898-Z",
     "productName": "Puma-Speeder-Mesh Running",
     "productVariant": "UK 8",
-    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic3.png",
+    "productImage": "https://alandsilva26.github.io/shopping-cart-flutter/itemImages/pic3.png",
     "productPrice": 4500.00
   },
   {
@@ -28,7 +28,7 @@
     "barcodeValue": "S-197946-Z",
     "productName": "Puma - Sports Socks",
     "productVariant": "Set of 3",
-    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic4.png",
+    "productImage": "https://alandsilva26.github.io/shopping-cart-flutter/itemImages/pic4.png",
     "productPrice": 1650.00
   }
 ]
