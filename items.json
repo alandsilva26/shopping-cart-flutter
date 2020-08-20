@@ -1,34 +1,34 @@
 [
   {
     "_id": "1",
-    "barcodeValue": "",
+    "barcodeValue": "1",
     "productName": "Robert Geller x Levis Shirt",
     "productVariant": "Size 40",
-    "productImage": "",
+    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic2.png",
     "productPrice": 2999
   },
   {
     "_id": "2",
-    "barcodeValue": "",
+    "barcodeValue": "2",
     "productName": "Bose Quiet Comfort",
     "productVariant": "Black",
-    "productImage": "",
+    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic1.png",
     "productPrice": 9800
   },
   {
     "_id": "3",
-    "barcodeValue": "",
+    "barcodeValue": "3",
     "productName": "Puma-Speeder-Mesh Running",
     "productVariant": "UK 8",
-    "productImage": "",
+    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic3.png",
     "productPrice": 4500
   },
   {
     "_id": "4",
-    "barcodeValue": "",
+    "barcodeValue": "4",
     "productName": "Puma - Sports Socks",
     "productVariant": "Set of 3",
-    "productImage": "",
+    "productImage": "https://alandsilva26.github.io/safetied_assignment/itemImages/pic4.png",
     "productPrice": 1650
   }
 ]
