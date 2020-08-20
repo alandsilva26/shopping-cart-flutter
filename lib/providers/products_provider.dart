@@ -9,7 +9,7 @@ class ProductsProvider with ChangeNotifier {
   List<Product> _products = [];
   double _totalPrice = 0.0;
 //  String _baseUrl = "http://164.52.197.189:8181/fdb/prudle/db001/query";
-  String _baseUrl = "https://alandsilva26.github.io/safetied_assignment/items.json";
+  String _baseUrl = "https://alandsilva26.github.io/shopping-cart-flutter/items.json";
 
   get products {
     return _products;
