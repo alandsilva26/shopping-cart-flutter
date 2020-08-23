@@ -16,5 +16,3 @@ A shopping cart application with barcode functionality
 ***
 
 ![barcode4](./barcode/barcode-4.png)
-
-## Getting Started
